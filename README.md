@@ -5,7 +5,7 @@
 ## Configuration
 
 - CPU：Intel I7 7700HQ
-- RAM：32G(G\*2 G Skill Intl) 2400MHz DDR4
+- RAM：32G(16G\*2 G Skill Intl) 2400MHz DDR4
 - HardDisk：PM961 NVMe SAMSUNG 512GB
 - WIFI：DW1560
 - Screen：4K(touch)
