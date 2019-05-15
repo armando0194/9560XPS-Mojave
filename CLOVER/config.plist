@@ -7,7 +7,7 @@
 		<key>#Comment-SortedOrder</key>
 		<string>SortedOrder required if you have patched SSDTs in ACPI/patched</string>
 		<key>AutoMerge</key>
-		<true/>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>Patches</key>
@@ -299,12 +299,13 @@
 			<string>SSDT-PTSWAK.aml</string>
 			<string>SSDT-RMDGPU.aml</string>
 			<string>SSDT-SMBUS.aml</string>
-			<string>SSDT-TB3-9560.aml</string>
-			<string>SSDT-TYPC-9560.aml</string>
+			<string>SSDT-TB3-V1.aml</string>
 			<string>SSDT-UPRW.aml</string>
 			<string>SSDT-XOSI.aml</string>
 			<string>SSDT-YTBT.aml</string>
 			<string>SSDT-RMNE.aml</string>
+			<string>SSDT-USBX.aml</string>
+			<string>SSDT-UIAC.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
