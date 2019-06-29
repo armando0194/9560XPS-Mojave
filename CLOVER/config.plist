@@ -6,8 +6,6 @@
 	<dict>
 		<key>#Comment-SortedOrder</key>
 		<string>SortedOrder required if you have patched SSDTs in ACPI/patched</string>
-		<key>AutoMerge</key>
-		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>Patches</key>
@@ -240,6 +238,20 @@
 					WVRCVA==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Device AC rename to ADP1  pair with SSDT-ADP1 - credit syscl</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					QUNfXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					QURQMQ==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -265,8 +277,6 @@
 		<string>0x06</string>
 		<key>SSDT</key>
 		<dict>
-			<key>DropOem</key>
-			<false/>
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
@@ -281,37 +291,11 @@
 			<key>UseSystemIO</key>
 			<true/>
 		</dict>
-		<key>SortedOrder</key>
-		<array>
-			<string>SSDT-ALC298.aml</string>
-			<string>SSDT-ALS0.aml</string>
-			<string>SSDT-BRT6.aml</string>
-			<string>SSDT-Config.aml</string>
-			<string>SSDT-DeepIdle.aml</string>
-			<string>SSDT-DMAC.aml</string>
-			<string>SSDT-HDEF.aml</string>
-			<string>SSDT-I2C.aml</string>
-			<string>SSDT-LPC.aml</string>
-			<string>SSDT-MCHC.aml</string>
-			<string>SSDT-MEM2.aml</string>
-			<string>SSDT-PMCR.aml</string>
-			<string>SSDT-PNLF.aml</string>
-			<string>SSDT-PTSWAK.aml</string>
-			<string>SSDT-RMDGPU.aml</string>
-			<string>SSDT-SMBUS.aml</string>
-			<string>SSDT-TB3-V1.aml</string>
-			<string>SSDT-UPRW.aml</string>
-			<string>SSDT-XOSI.aml</string>
-			<string>SSDT-YTBT.aml</string>
-			<string>SSDT-RMNE.aml</string>
-			<string>SSDT-USBX.aml</string>
-			<string>SSDT-UIAC.aml</string>
-		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=no brcmfx-country=#a dart=0 lilucpu=8</string>
+		<string>darkwake=no brcmfx-country=#a dart=0</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -351,11 +335,6 @@
 				</data>
 			</dict>
 		</array>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
-		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>#Kaby Lake-Comment</key>
@@ -367,11 +346,11 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAWGQ==
+				AAAbWQ==
 				</data>
 				<key>device-id</key>
 				<data>
-				FhkAAA==
+				ElkAAA==
 				</data>
 				<key>enable-hdmi20</key>
 				<data>
@@ -455,7 +434,7 @@
 			<false/>
 		</dict>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>Neon256</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -533,17 +512,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/28/2018</string>
+		<string>04/22/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP151.88Z.F000.B00.1809280842</string>
+		<string>MBP151.88Z.F000.B00.1904222000</string>
 		<key>Board-ID</key>
 		<string>Mac-937A206F2EE63C01</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C028271004NJP4FA8</string>
+		<string>C02820100QXJP4F1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -555,7 +534,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>220.250.320.0.0</string>
+		<string>220.260.170.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -573,9 +552,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro15,1</string>
 		<key>SerialNumber</key>
-		<string>C02XQ03TKGYG</string>
+		<string>C02WQ0NYKGYG</string>
 		<key>SmUUID</key>
-		<string>196B233B-F554-4458-8D3D-95B445CCF15C</string>
+		<string>002308C8-75E4-4C00-B48D-5863925C3CC1</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
